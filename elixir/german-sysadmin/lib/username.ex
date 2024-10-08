@@ -1,4 +1,5 @@
 defmodule Username do
+  @spec sanitize(username :: charlist())
   def sanitize([]), do: []
   def sanitize([first_char | tail]) do
     cleaned = case first_char do
