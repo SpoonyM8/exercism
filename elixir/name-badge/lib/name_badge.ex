@@ -1,6 +1,6 @@
 defmodule NameBadge do
   def print(id, name, department) do
-    base_str = "#{name} - #{String.upcase(get_department(department))}"
+    base_str = "#{name} - #{get_department(department)}"
     if is_nil(id), do: base_str, else: "[#{id}] - " <> base_str
   end
 
